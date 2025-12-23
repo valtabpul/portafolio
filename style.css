@@ -75,9 +75,76 @@ main{
 .proyectos a{
     color: #ffffff;
 }
-.contacto{
-    background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente */
-    backdrop-filter: blur(10px);
+/* contacto */
+.card {
+    background: #ffffff57;
+    display: flex;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 15px;
+    gap: 50px;
+    box-shadow: 1px 1px 20px #3d2a57;
+
+}
+
+.col { flex: 1; }
+.col input{
+    background: transparent;
+    color: #161616;
+}
+
+h1 { font-size: 28px; margin-bottom: 10px; color: #333; }
+
+/* Cajas de información */
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.info-box strong {color:rgba(255, 255, 255, 0.795);}
+.shadow {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.icon {
+    width: 40px; height: 40px;
+    background: #f3e8ff;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.icon.purple { background: #a855f7; color: black; }
+
+/* Formulario */
+.input-group {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.input-group label { display: block; font-size: 12px; color: #ffffff; }
+
+input, textarea {
+    border: none;
+    width: 100%;
+    padding: 8px 0;
+    outline: none;
+}
+
+.row { display: flex; gap: 20px; }
+
+.btn {
+    background: #4F228D;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 /* mascotas */
 .encabezado-mascotas{
@@ -94,4 +161,5 @@ main{
 .contenido-mascotas{
     display: flex;
     flex-direction: row;
+    gap: 2rem;
 }
